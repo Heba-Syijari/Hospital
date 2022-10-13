@@ -1,0 +1,116 @@
+.intr {
+    height: 88vh;
+    background-color: var(--blue4);
+}
+.m {
+    display: flex;
+    margin: 0rem 4rem;
+}
+
+/* right side styling */
+.d2-right {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 7rem 0rem;
+}
+.d2-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.d2-name > :nth-child(1) {
+    color: var(--blue1);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    width: fit-content;
+    border-bottom : var(--blue3) solid 2px;
+}
+.d2-name > :nth-child(2) {
+    font-size: 1.3rem;
+    color: var(--gray);
+    margin-top: 10px;
+}
+.d2-button {
+    padding: 5px 70px;
+}
+
+/* left side styling */
+.d2-left {
+    flex: 1;
+    position: relative;
+    margin-right: 4rem;
+}
+
+.d2-left > :nth-child(1) {
+    position: absolute;
+    transform: scale(1);
+    left: 5%;
+    top: 1%;
+    width: auto;
+    height: 500px;
+}
+
+
+/* blur */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .d2-right {
+        margin: 4rem 0rem;
+    }
+    .d2-left > :nth-child(1) {
+        left: -9%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    .intro {
+        margin: 0rem 3rem;
+    }
+    .d2-left > :nth-child(1) {
+        transform: scale(0.9);
+        left: -5rem;
+        top: 1rem;
+    }
+    .d2-button {
+        font-size: 16px;
+    }
+    .d2-right {
+        gap: 2rem;
+        margin: 4rem 0rem;
+        }
+    }
+    @media (max-width: 767px){
+    .intro {
+    }
+    
+    .m {
+        margin: 0rem 2rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .d2-left {
+        transform: scale(0.65);
+        left: -10rem;
+        top: 18rem;
+        margin: auto;
+    }
+    .d2-button {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .d2-right {
+        margin: 0rem 0rem;
+        gap: 2rem;
+        }
+        .d2-name > :nth-child(1) {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .d2-name > :nth-child(2) {
+            font-size: 1rem;
+        }
+}
+

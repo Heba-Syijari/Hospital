@@ -1,0 +1,118 @@
+.intro {
+    display: flex;
+    height: 88vh;
+    margin: 0rem 4rem;
+}
+
+/* .heading{
+    color: var(--white);
+    margin-top: 2rem;
+    padding: 5px 0px;
+    width: fit-content;
+    border-bottom : var(--blue3) solid 2px;
+} */
+/* left side styling */
+.d-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 7rem 0rem;
+}
+.d-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.d-name > :nth-child(1) {
+    color: var(--blue1);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    width: fit-content;
+    border-bottom : var(--blue3) solid 2px;
+}
+.d-name > :nth-child(2) {
+    font-size: 1.3rem;
+    color: var(--gray);
+    margin-top: 10px;
+}
+.d-button {
+    padding: 5px 70px;
+}
+
+/* right side styling */
+.d-right {
+    flex: 1;
+    position: relative;
+    margin-right: 6rem;
+}
+
+.d-right > :nth-child(1) {
+    position: absolute;
+    transform: scale(1);
+    left: 10%;
+    top: 1%;
+    width: auto;
+    height: 500px;
+}
+
+
+/* blur */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .d-left {
+        margin: 4rem 0rem;
+    }
+    .d-right > :nth-child(1) {
+        left: 4%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    .intro {
+        margin: 0rem 3rem;
+    }
+    .d-right > :nth-child(1) {
+        transform: scale(0.9);
+        left: -1rem;
+        top: 1rem;
+    }
+    .d-button {
+        font-size: 16px;
+    }
+    .d-left {
+        gap: 2rem;
+        margin: 4rem 0rem;
+        }
+    }
+    @media (max-width: 767px){
+    .intro {
+        flex-direction: column;
+        margin: 0rem 1rem;
+        gap: 1rem;
+    }
+    .d-right {
+        transform: scale(0.65);
+        left: -11rem;
+        top: -9rem;
+        margin: auto;
+        z-index: -1;
+    }
+    .d-button {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .d-left {
+        margin: 1rem 0rem 0rem;
+        gap: 2rem;
+        }
+        .d-name > :nth-child(1) {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .d-name > :nth-child(2) {
+            font-size: 1rem;
+        }
+}
+

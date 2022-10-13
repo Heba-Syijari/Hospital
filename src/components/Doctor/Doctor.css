@@ -1,0 +1,78 @@
+.Doctor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.backg-d {
+    background: linear-gradient(135deg , rgb(0, 70, 97, 0.76) , rgb(0, 70, 97, 0.76)) ,
+                url(../../img/background.png) center center/cover no-repeat;
+    color: var(--white);
+    width: 100%;
+    height:400px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-container-d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.box-container-d .box-d{
+    width:20rem;
+    background-color: var(--blue4);
+    position: relative;
+    margin: 1.5rem ;
+    padding: 0rem 1rem 1rem;  
+}
+
+.box-container-d .box-d img{
+    height: 180px;
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.box-container-d .box-d .content-d{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.box-container-d .box-d i{
+    color: var(--blue3)
+}
+
+.box-container-d .box-d .H1{
+    color: var(--blue1);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.box-container-d .box-d .H2{
+    color: var(--gray1);
+}
+
+.box-container-d .box-d .H3{
+    color: var(--gray);
+    font-weight: 600;
+}
+
+@media (max-width : 390px){
+    .box-container-d .box-d{
+        width:15rem;  
+    }
+    .box-container-d .box-d .H1{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .buttonN {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}

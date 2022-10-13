@@ -1,0 +1,62 @@
+.about{
+    background: linear-gradient(135deg , rgb(0, 70, 97, 0.76) , rgb(0, 70, 97, 0.76)) ,
+                url(../../img/background.png) center center/cover no-repeat;
+    color: var(--white);
+}
+.backg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading{
+    margin-top: 2rem;
+    padding: 5px 0px;
+    width: fit-content;
+    border-bottom : var(--blue3) solid 2px;
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+
+.box-container .box{
+    width:20rem;
+    background-color: rgb(0, 70, 97 ,0.64);
+    position: relative;
+    margin: 1.5rem;
+    padding: 5rem 2rem 6rem;  
+}
+
+.box-container .box .photo{
+    text-align: center;
+}
+
+.box-container .box img{
+    height: 90px;
+    width: auto;
+    margin-bottom: 2rem;
+}
+
+.box-container .box p{
+    padding:1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width : 390px){
+    .box-container .box{
+        width:15rem;  
+        padding: 4rem 2rem 5rem;
+    }
+    .box-container .box img{
+        height: 80px;
+    }
+    
+}

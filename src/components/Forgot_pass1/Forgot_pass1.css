@@ -1,0 +1,68 @@
+.btn-primary {
+    background-color: var(--gray2) !important;
+    border: none !important;
+    font-weight: bold !important;
+    font-size: 1.1rem !important;
+}
+.welcome {
+    text-align: center;
+    color: var(--blue1);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.font {
+    text-align: center;
+    color: var(--gray);
+    font-size: small;
+}
+div >button >a {
+    text-decoration: none;
+    color: var(--white);
+} 
+div >a{
+    color: var(--blue3);
+    text-decoration: none;
+}
+.label {
+    color: var(--blue1);
+}
+.back {
+    background-image: var(--blue2);
+}
+.backwhite {
+    background-color: var(--white);
+    margin: 0px !important;
+}
+.cont {
+    /* margin: 0px !important; */
+}
+@media (max-width: 767px){
+    .none {
+        display: none;
+    }
+    /* .mid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+}
+@media ((min-width: 768px) and (max-width:991)){
+    .mid{
+        margin-right: 0px !important;
+    }
+    
+}
+@media ((min-width: 992px)){
+    
+}
+.marg {
+    margin: 40px 0px 0px 40px;
+    width: 100px;
+    height: 70px;
+}
+
+.size {
+    margin-top:65px ;
+    width: auto;
+    height: 300px ;
+}

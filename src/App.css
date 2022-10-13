@@ -1,0 +1,54 @@
+:root
+{
+    --blue1 : #01379A;
+    --blue2 : linear-gradient(to right, #01379A,#069AD3);
+    --blue3 : #069AD3;
+    --blue5 : #065A7C;
+    --blue4 : #F2FBFF ;
+    --blue6 : #A0E5FF ;
+    --white : #FFFFFF;
+    --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #707070;
+    --gray1 : #BBBBBB;
+    --gray2 :#D9D9D9;
+    --blueCard : #DDF8FE;
+}
+
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);    
+    }
+
+.button {
+    background: var(--blue3);
+    border-radius: 2rem;
+    border: none;
+    color: var(--white);
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: var(--white);
+    cursor: pointer;
+    border: 1px solid var(--blue3);
+    color: var(--blue3);
+}
+.buttonN {
+    background: var(--white);
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 1px solid var(--blue3);
+    color: var(--blue3);
+    padding: 5px 20px;
+    font-size: 16px;
+}
+/* @media screen and (max-width: 480px)  */
+@media (max-width: 768px) and (max-width: 991px) {
+    .App {
+        padding: 0.5rem 1rem;
+}
+}
