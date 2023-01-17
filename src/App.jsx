@@ -19,7 +19,7 @@ function App() {
     <>
       <BrowserRouter basename="">
         <Routes >
-          <Route path="/Eyadty" element={<> <Navbar />
+          <Route path="/" element={<> <Navbar />
                                       <HomePage/>
                                       <Services/>
                                       <Department1/>
